@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="canvas"></canvas>
-    <div id="opennav" onclick="document.getElementById('navbar').style.display = 'flex'; this.style.display = 'none'">
+    <canvas id="canvas"></canvas> <!-- 1 -->
+    <div id="opennav" onclick="showNavbar()">
         <img src="assets/show_navigation.svg">
     </div>
 
-    <div id="createnode">
+    <div id="createnode"><!-- 3 -->
+        <form>
         <label for="create"><b>Create Node</b></label><br>
         <input id="create" type="text">
         <button type="submit">Create</button>
+        </form> 
     </div>
 
-    <div id="navbar">
+    <div id="navbar"> <!-- 2 -->
         <div id="save">
             <img src="assets/download.svg">
             <p>Save Image</p>
