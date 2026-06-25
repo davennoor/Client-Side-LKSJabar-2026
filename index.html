@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dafa_Module_Client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="opennav" onclick="document.getElementById('navbar').style.display = 'flex'; this.style.display = 'none'">
+        <img src="assets/show_navigation.svg">
+    </div>
+
+    <div id="createnode">
+        <label for="create"><b>Create Node</b></label><br>
+        <input id="create" type="text">
+        <button type="submit">Create</button>
+    </div>
+
+    <div id="navbar">
+        <div id="save">
+            <img src="assets/download.svg">
+            <p>Save Image</p>
+        </div>
+        <div id="find">
+            <img src="assets/find_path.svg">
+            <p>Find Path</p>
+        </div>
+        <div id="connect">
+            <img src="assets/connect.svg">
+            <p>Connect</p>
+        </div>
+        <div id="delete">
+            <img src="assets/delete.svg">
+            <p>Delete</p>
+        </div>
+        <div id="clear">
+            <img src="assets/empty.svg">
+            <p>Clear</p>
+        </div>
+    </div>
+<script src="main.js"></script>   
+</body>
+</html>
