@@ -23,6 +23,8 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: white;
     z-index: 1;
+    display: none;
+    position:absolute;
 }/*4*/
 
 #canvas{
@@ -47,6 +49,7 @@
     z-index: 1;
 }/*2*/
 
+
 #save, #find, #assets, #connect, #delete, #clear{
     display: flex;
     flex-direction: row;
@@ -56,6 +59,12 @@
     height: 10px;
 }/*3*/
 
+.disabled{
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+    color: black;
+}
 #save p{
     margin: 0px;
     padding: 0px;
@@ -66,3 +75,18 @@
     margin: 0px;
     padding: 0px;
 }
+
+#distance{
+    margin: 20px;
+    padding: 3px;
+    border:2px solid black;
+    border-radius: 8px;
+    width: 100px;
+    height: 50px;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    z-index: 1;
+    display:none;
+    position:absolute;
+}/*5*/

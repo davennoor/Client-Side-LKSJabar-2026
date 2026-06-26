@@ -13,10 +13,10 @@
     </div>
 
     <div id="createnode"><!-- 3 -->
-        <form>
+        <form onsubmit="return false">
         <label for="create"><b>Create Node</b></label><br>
-        <input id="create" type="text">
-        <button type="submit">Create</button>
+        <input id="create" type="text" min="1" max="10">
+        <button type="button" onclick="createNode()">Create</button>
         </form> 
     </div>
 
@@ -29,11 +29,11 @@
             <img src="assets/find_path.svg">
             <p>Find Path</p>
         </div>
-        <div id="connect">
+        <div id="connect" class="disabled">
             <img src="assets/connect.svg">
             <p>Connect</p>
         </div>
-        <div id="delete">
+        <div id="delete" class="disabled">
             <img src="assets/delete.svg">
             <p>Delete</p>
         </div>
@@ -42,6 +42,19 @@
             <p>Clear</p>
         </div>
     </div>
+
+    <p id="connect-hint" style="display: none; color: red; position: fixed; bottom: 60px; left: 50%; transform: translateX(-50%); font-weight: bold; font-family: sans-serif; z-index: 1;">
+    Choose Target Node</p>
+
+    <div id="distance"><!-- 5 -->
+        <form onsubmit="return false">
+        <label for="create"><b>Distance</b></label><br>
+        <input id="create" type="number" min="1" max="100">
+        <button type="button">Connect</button>
+        </form> 
+    </div>
+
+      
 <script src="main.js"></script>   
 </body>
 </html>
